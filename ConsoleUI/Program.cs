@@ -3,122 +3,177 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 /**
-* Date 2/26/2023
+* Date 3/15/2023
 *CSC 153
 *David McCarthy
-*This Version of the game contains the menu to display rooms, weapons, potions, treasure, items, and mobs.
+*This Version of the game contains the menu to display rooms, weapons, potions, treasure, items, and mobs. Updated Verison: Now continues to display menu and 
+*it now has files to contain the variables
 */
 namespace ConsoleUI
 {
     class Program
     {
         static void Main(string[] args)
-        { 
-            Console.WriteLine("To open menu type Menu or type Quit to quit the program.");
-            string userMenuInput;
-            string userInitalInput = Console.ReadLine();
-            if (userInitalInput == "Menu")
+        {
+            bool showAgain = true;
+            do
             {
-                Console.WriteLine("Menu Opened.");
-                Console.WriteLine("Type the numbers shown to display your choice.");
-                Console.WriteLine("1. Display Rooms");
-                Console.WriteLine("2. Display Weapons");
-                Console.WriteLine("3. Display Potions");
-                Console.WriteLine("4. Display Treasure");
-                Console.WriteLine("5. Display Items");
-                Console.WriteLine("6. Display Mobs");
-                Console.WriteLine("7. Exit");
-                userMenuInput = Console.ReadLine();
-                if (userMenuInput == "1" || userMenuInput == "Rooms")
+                Console.WriteLine("To open menu type Menu or type Quit to quit the program.");
+                string userMenuInput;
+                string userInitalInput = Console.ReadLine();
+                if (userInitalInput == "Menu")
                 {
-                    string entranceSeaKingBar = "Entrance to the Sea King's Bar";
-                    string barRoomSeaKingBar = "Sea King's Bar Barroom";
-                    string entranceGarpGroceryStore = "Entrance to Garp's Grocery Store";
-                    string storageGarpGroceryStore = "Garp's Grocery Store Storage Room";
-                    string storeRoomGarpGroceryStore = "Garp's Grocery Store Storeroom";
-                    Console.WriteLine(entranceSeaKingBar);
-                    Console.WriteLine(barRoomSeaKingBar);
-                    Console.WriteLine(entranceGarpGroceryStore);
-                    Console.WriteLine(storageGarpGroceryStore);
-                    Console.WriteLine(storeRoomGarpGroceryStore);
-                    Console.ReadLine();
-                }
-                else if (userMenuInput == "2" || userMenuInput == "Weapons")
-                {
-                    string rustyDagger = "Rusty Dagger";
-                    string rustyCutLass = "Rusty Cutlass";
-                    string rustyFlintLock = "Rusty FlintLock";
-                    string slingShot = "Slingshot";
-                    Console.WriteLine(rustyDagger);
-                    Console.WriteLine(rustyCutLass);
-                    Console.WriteLine(rustyFlintLock);
-                    Console.WriteLine(slingShot);
-                    Console.ReadLine();
-                }
-                else if (userMenuInput == "3" || userMenuInput == "Potions")
-                {
-                    string smallHealthPotion = "Small Health Potion (+25 hp)";
-                    string largeHealthPotion = "Large Health Potion (+100 hp)";
-                    Console.WriteLine(smallHealthPotion);
-                    Console.WriteLine(largeHealthPotion);
-                    Console.ReadLine();
-                }
-                else if (userMenuInput == "4" || userMenuInput == "Treasure")
-                {
-                    string rustedChest = "Rusted Chest";
-                    string silverChest = "Silver Chest";
-                    string goldenChest = "Golden Chest";
-                    Console.WriteLine(rustedChest);
-                    Console.WriteLine(silverChest);
-                    Console.WriteLine(goldenChest);
-                    Console.ReadLine();
-                }
-                else if (userMenuInput == "5" || userMenuInput == "Items")
-                {
-                    string seaKingsShot = "Sea King's Shot (Drink)";
-                    string seaKingsSteak = "Sea King's Steak (Food)";
-                    string seaKingsFish = "Sea King's Fish (Food)";
-                    string garpsEnergyDrink = "Garp's Energy Drink";
-                    string luffysChips = "Luffy's Chips";
-                    Console.WriteLine(seaKingsShot);
-                    Console.WriteLine(seaKingsSteak);
-                    Console.WriteLine(seaKingsFish);
-                    Console.WriteLine(garpsEnergyDrink);
-                    Console.WriteLine(luffysChips);
-                    Console.ReadLine();
+                    Console.WriteLine("Menu Opened.");
+                    Console.WriteLine("Type the numbers or word (that is displayed) to display your choice.");
+                    Console.WriteLine("1. Display Rooms");
+                    Console.WriteLine("2. Display Weapons");
+                    Console.WriteLine("3. Display Potions");
+                    Console.WriteLine("4. Display Treasure");
+                    Console.WriteLine("5. Display Items");
+                    Console.WriteLine("6. Display Mobs");
+                    Console.WriteLine("7. Exit");
+                    userMenuInput = Console.ReadLine();
+                    if (userMenuInput == "1" || userMenuInput == "Rooms")
+                    {
+                        StreamReader inputFile;
+                        inputFile = File.OpenText("Rooms.csv");
+                        while (!inputFile.EndOfStream)
+                        {
+                            String id;
+                            String name;
+                            String description;
+                            String[] line;
+                            line = inputFile.ReadLine().Split(',');
+                            id = (line[0]);
+                            name = (line[1]);
+                            description = (line[2]);
+                            Console.WriteLine(id);
+                            Console.WriteLine(name);
+                            Console.WriteLine(description);
+                            showAgain = true;
+                        }
+                        inputFile.Close();
+                    }
+                    else if (userMenuInput == "2" || userMenuInput == "Weapons")
+                    {
+                        StreamReader inputFile;
+                        inputFile = File.OpenText("Weapons.csv");
+                        while (!inputFile.EndOfStream)
+                        {
+                            String id;
+                            String name;
+                            String description;
+                            String[] line;
+                            line = inputFile.ReadLine().Split(',');
+                            id = (line[0]);
+                            name = (line[1]);
+                            description = (line[2]);
+                            Console.WriteLine(id);
+                            Console.WriteLine(name);
+                            Console.WriteLine(description);
+                            showAgain = true;
+                        }
+                        inputFile.Close();
+                    }
+                    else if (userMenuInput == "3" || userMenuInput == "Potions")
+                    {
+                        StreamReader inputFile;
+                        inputFile = File.OpenText("Potions.csv");
+                        while (!inputFile.EndOfStream)
+                        {
+                            String id;
+                            String name;
+                            String description;
+                            String [] line;
+                            line = inputFile.ReadLine().Split(',');
+                            id = (line[0]);
+                            name = (line[1]);
+                            description = (line[2]);
+                            Console.WriteLine(id);
+                            Console.WriteLine(name);
+                            Console.WriteLine(description);
+                            showAgain = true;
+                        }
+                    }
+                    else if (userMenuInput == "4" || userMenuInput == "Treasure")
+                    {
+                        StreamReader inputFile;
+                        inputFile = File.OpenText("Treasure.csv");
+                        while (!inputFile.EndOfStream)
+                        {
+                            String id;
+                            String name;
+                            String description;
+                            String[] line;
+                            line = inputFile.ReadLine().Split(',');
+                            id = (line[0]);
+                            name = (line[1]);
+                            description = (line[2]);
+                            Console.WriteLine(id);
+                            Console.WriteLine(name);
+                            Console.WriteLine(description);
+                            showAgain = true;
+                        }
+                    }
+                    else if (userMenuInput == "5" || userMenuInput == "Items")
+                    {
+                        StreamReader inputFile;
+                        inputFile = File.OpenText("Items.csv");
+                        while (!inputFile.EndOfStream)
+                        {
+                            String id;
+                            String name;
+                            String description;
+                            String[] line;
+                            line = inputFile.ReadLine().Split(',');
+                            id = (line[0]);
+                            name = (line[1]);
+                            description = (line[2]);
+                            Console.WriteLine(id);
+                            Console.WriteLine(name);
+                            Console.WriteLine(description);
+                            showAgain = true;
+                        }
 
+                    }
+                    else if (userMenuInput == "6" || userMenuInput == "Mobs")
+                    {
+                        StreamReader inputFile;
+                        inputFile = File.OpenText("Mobs.csv");
+                        while (!inputFile.EndOfStream)
+                        {
+                            String id;
+                            String name;
+                            String description;
+                            String[] line;
+                            line = inputFile.ReadLine().Split(',');
+                            id = (line[0]);
+                            name = (line[1]);
+                            description = (line[2]);
+                            Console.WriteLine(id);
+                            Console.WriteLine(name);
+                            Console.WriteLine(description);
+                            showAgain = true;
+                        }
+                    }
+                    else if (userMenuInput == "7" || userMenuInput == "Exit")
+                    {
+                        Environment.Exit(0);
+                    }
                 }
-                else if (userMenuInput == "6" || userMenuInput == "Mobs")
+                else if (userInitalInput == "Quit")
                 {
-                    string pettyTheif = "A Petty Theif";
-                    string seaKing = "A Sea King";
-                    string smallVemonSnake = "A small vemonous Snake";
-                    string salmon = "A salmon";
-                    string dog = "A dog";
-                    Console.WriteLine(pettyTheif);
-                    Console.WriteLine(seaKing);
-                    Console.WriteLine(smallVemonSnake);
-                    Console.WriteLine(salmon);
-                    Console.WriteLine(dog);
-                    Console.ReadLine();
+                    Environment.Exit(0);
+                    showAgain = false;
                 }
-                else if (userMenuInput == "7" || userMenuInput == "Exit")
+                else
                 {
-                    Console.WriteLine("Menu Closed");
-                    Console.ReadLine();
+                    Console.WriteLine("Invalid Input Please Try Again");
                 }
-            }
-            else if (userInitalInput == "Quit")
-            {
-                Console.WriteLine("Goodbye :)");
-                Console.ReadLine();
-            }
-            else
-            {
-                Console.WriteLine("Invalid Input Please Try Again");
-                Console.ReadLine();
-            }
+            } while (showAgain == true);
+            
             
 
         }
