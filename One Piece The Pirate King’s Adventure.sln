@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{237F8153-4A22-4C6D-8AFA-5E7538E7E00C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One_Piece_The_Pirate_Kings_Adventure_Class_Library", "One_Piece_The_Pirate_Kings_Adventure_Class_Library\One_Piece_The_Pirate_Kings_Adventure_Class_Library.csproj", "{90178C0C-8BC8-4A09-A5CC-CB9A73003856}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{237F8153-4A22-4C6D-8AFA-5E7538E7E00C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{237F8153-4A22-4C6D-8AFA-5E7538E7E00C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{237F8153-4A22-4C6D-8AFA-5E7538E7E00C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90178C0C-8BC8-4A09-A5CC-CB9A73003856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90178C0C-8BC8-4A09-A5CC-CB9A73003856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90178C0C-8BC8-4A09-A5CC-CB9A73003856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90178C0C-8BC8-4A09-A5CC-CB9A73003856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
