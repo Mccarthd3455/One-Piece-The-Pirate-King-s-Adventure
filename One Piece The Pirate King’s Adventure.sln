@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One_Piece_The_Pirate_Kings_Adventure_Class_Library", "One_Piece_The_Pirate_Kings_Adventure_Class_Library\One_Piece_The_Pirate_Kings_Adventure_Class_Library.csproj", "{90178C0C-8BC8-4A09-A5CC-CB9A73003856}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{6AFCBFE3-9515-4564-9325-ACF8A9D13020}"
+	ProjectSection(SolutionItems) = preProject
+		ConsoleUI\bin\Debug\Items.csv = ConsoleUI\bin\Debug\Items.csv
+		ConsoleUI\bin\Debug\Mobs.csv = ConsoleUI\bin\Debug\Mobs.csv
+		ConsoleUI\bin\Debug\Potions.csv = ConsoleUI\bin\Debug\Potions.csv
+		ConsoleUI\bin\Debug\Rooms.csv = ConsoleUI\bin\Debug\Rooms.csv
+		ConsoleUI\bin\Debug\Treasure.csv = ConsoleUI\bin\Debug\Treasure.csv
+		ConsoleUI\bin\Debug\Weapons.csv = ConsoleUI\bin\Debug\Weapons.csv
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

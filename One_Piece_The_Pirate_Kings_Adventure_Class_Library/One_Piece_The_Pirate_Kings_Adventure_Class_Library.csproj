@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>90178c0c-8bc8-4a09-a5cc-cb9a73003856</ProjectGuid>
+    <ProjectGuid>{90178C0C-8BC8-4A09-A5CC-CB9A73003856}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>One_Piece_The_Pirate_Kings_Adventure_Class_Library</RootNamespace>
@@ -31,24 +31,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Combat\CombatSystem.cs" />
+    <Compile Include="Combat\DiceRoll.cs" />
+    <Compile Include="Menu\CompleteGameMenu.cs" />
+    <Compile Include="Menu\InitalMenu.cs" />
+    <Compile Include="Menu\Items.cs" />
+    <Compile Include="Menu\MenuChoices.cs" />
+    <Compile Include="Menu\MenuIfStatements.cs" />
+    <Compile Include="Menu\MenuItems.cs" />
+    <Compile Include="Menu\Mobs.cs" />
+    <Compile Include="Menu\Potions.cs" />
+    <Compile Include="Menu\Treasure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Menu\Rooms.cs" />
+    <Compile Include="Menu\Weapons.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

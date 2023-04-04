@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using One_Piece_The_Pirate_Kings_Adventure_Class_Library;
+
 /**
 * Date 3/29/2023
 *CSC 153
 *David McCarthy
-*This version 
+*This version adds a combat system to the game and seperates the Menu into different classes
 */
 namespace ConsoleUI
 {
@@ -17,7 +18,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            One_Piece_The_Pirate_Kings_Adventure_Class.gameMenu();
+            One_Piece_The_Pirate_Kings_Adventure_Class.DisplayCompleteMenu();
         }
     }
 }
