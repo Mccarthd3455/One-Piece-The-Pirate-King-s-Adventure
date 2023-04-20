@@ -12,24 +12,31 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
         public static bool DisplayTreasure()
         {
             bool showAgain = false;
-            StreamReader inputFile;
-            inputFile = File.OpenText("Treasure.csv");
-            while (!inputFile.EndOfStream)
+            World.inputFile = File.OpenText("Treasures.txt");
+            while (!World.inputFile.EndOfStream)
             {
-                String id;
-                String name;
-                String description;
-                String[] line;
-                line = inputFile.ReadLine().Split(',');
-                id = (line[0]);
-                name = (line[1]);
-                description = (line[2]);
-                Console.WriteLine(id);
-                Console.WriteLine(name);
-                Console.WriteLine(description);
+                World.treasureID = World.inputFile.ReadLine();
+                World.treasure1 = World.inputFile.ReadLine();
+                World.treasureDesc = World.inputFile.ReadLine();
+                World.treasureID2 = World.inputFile.ReadLine();
+                World.treasure2 = World.inputFile.ReadLine();
+                World.treasureDesc2 = World.inputFile.ReadLine();
+                World.treasureID3 = World.inputFile.ReadLine();
+                World.treasure3 = World.inputFile.ReadLine();
+                World.treasureDesc3 = World.inputFile.ReadLine();
+
+                Console.WriteLine(World.treasureID);
+                Console.WriteLine(World.treasure1);
+                Console.WriteLine(World.treasureDesc);
+                Console.WriteLine(World.treasureID2);
+                Console.WriteLine(World.treasure2);
+                Console.WriteLine(World.treasureDesc2);
+                Console.WriteLine(World.treasureID3);
+                Console.WriteLine(World.treasure3);
+                Console.WriteLine(World.treasureDesc3);
                 showAgain = true;
             }
-            inputFile.Close();
+            World.inputFile.Close();
             return showAgain;
         }
     }

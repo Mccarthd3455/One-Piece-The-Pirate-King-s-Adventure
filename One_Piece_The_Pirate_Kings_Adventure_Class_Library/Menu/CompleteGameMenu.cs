@@ -13,6 +13,7 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
             bool showAgain = true;
             do
             {
+                One_Piece_The_Pirate_Kings_Adventure_Class_Library.WorldLoad.LoadWorld();
                 One_Piece_The_Pirate_Kings_Adventure_Class_Library.InitalMenu.DisplayInitalMenu();
                 string userInitalInput = One_Piece_The_Pirate_Kings_Adventure_Class_Library.InitalMenu.userInitalMenuInput();
                 showAgain = One_Piece_The_Pirate_Kings_Adventure_Class_Library.MenuIfStatements.DisplayMenu(userInitalInput);

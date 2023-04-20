@@ -9,12 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One_Piece_The_Pirate_Kings_
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{6AFCBFE3-9515-4564-9325-ACF8A9D13020}"
 	ProjectSection(SolutionItems) = preProject
-		ConsoleUI\bin\Debug\Items.csv = ConsoleUI\bin\Debug\Items.csv
-		ConsoleUI\bin\Debug\Mobs.csv = ConsoleUI\bin\Debug\Mobs.csv
-		ConsoleUI\bin\Debug\Potions.csv = ConsoleUI\bin\Debug\Potions.csv
-		ConsoleUI\bin\Debug\Rooms.csv = ConsoleUI\bin\Debug\Rooms.csv
-		ConsoleUI\bin\Debug\Treasure.csv = ConsoleUI\bin\Debug\Treasure.csv
-		ConsoleUI\bin\Debug\Weapons.csv = ConsoleUI\bin\Debug\Weapons.csv
+		Items.csv = Items.csv
+		Mobs.csv = Mobs.csv
+		Potions.csv = Potions.csv
+		D:\One Piece The Pirate King’s Adventure\Rooms.csv = D:\One Piece The Pirate King’s Adventure\Rooms.csv
+		D:\One Piece The Pirate King’s Adventure\Treasure.csv = D:\One Piece The Pirate King’s Adventure\Treasure.csv
+		D:\One Piece The Pirate King’s Adventure\Weapons.csv = D:\One Piece The Pirate King’s Adventure\Weapons.csv
 	EndProjectSection
 EndProject
 Global
