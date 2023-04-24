@@ -30,13 +30,11 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Combat
                     {
                         Console.WriteLine("You Died in " + roundCounter + " rounds.");
                         IsDead = true;
-                        Console.ReadLine();
                     }
                     if (enemyHP <= 0)
                     {
                         Console.WriteLine("The fight lasted " + roundCounter + " rounds.");
                         IsDead = true;
-                        Console.ReadLine();
                     }
                 }
 

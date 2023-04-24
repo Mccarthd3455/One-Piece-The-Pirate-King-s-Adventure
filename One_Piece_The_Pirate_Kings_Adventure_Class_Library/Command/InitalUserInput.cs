@@ -37,7 +37,7 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Command
                 else if (World.userInput.ToLower() == "treasures" || World.userInput == "Treasures")
                 {
                     DisplayCommands.TreasureCommand();
-                    World.showAgain = true; 
+                    World.showAgain = true;
                 }
                 else if (World.userInput.ToLower() == "items" || World.userInput == "Items")
                 {
@@ -47,6 +47,11 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Command
                 else if (World.userInput.ToLower() == "mobs" || World.userInput == "Mobs")
                 {
                     DisplayCommands.MobsCommand();
+                    World.showAgain = true;
+                }
+                else if (World.userInput.ToLower() == "combat" || World.userInput == "Combat")
+                {
+                    Combat.CombatSystem.combatSystem();
                     World.showAgain = true;
                 }
             }
