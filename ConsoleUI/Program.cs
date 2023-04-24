@@ -18,7 +18,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            One_Piece_The_Pirate_Kings_Adventure_Class.DisplayCompleteMenu();
+            One_Piece_The_Pirate_Kings_Adventure_Class_Library.WorldLoad.LoadWorld();
+            One_Piece_The_Pirate_Kings_Adventure_Class_Library.One_Piece_The_Pirate_Kings_Adventure_Class.StartGame();
         }
     }
 }

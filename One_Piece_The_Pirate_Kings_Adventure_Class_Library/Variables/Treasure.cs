@@ -9,9 +9,8 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
 {
     class Treasure
     {
-        public static bool DisplayTreasure()
+        public static void DisplayTreasure()
         {
-            bool showAgain = false;
             World.inputFile = File.OpenText("Treasures.txt");
             while (!World.inputFile.EndOfStream)
             {
@@ -25,19 +24,16 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
                 World.treasure3 = World.inputFile.ReadLine();
                 World.treasureDesc3 = World.inputFile.ReadLine();
 
-                Console.WriteLine(World.treasureID);
-                Console.WriteLine(World.treasure1);
-                Console.WriteLine(World.treasureDesc);
-                Console.WriteLine(World.treasureID2);
-                Console.WriteLine(World.treasure2);
-                Console.WriteLine(World.treasureDesc2);
-                Console.WriteLine(World.treasureID3);
-                Console.WriteLine(World.treasure3);
-                Console.WriteLine(World.treasureDesc3);
-                showAgain = true;
+                World.treasures[0] = World.treasure1;
+                World.treasures[1] = World.treasure2;
+                World.treasures[2] = World.treasure3;
+
+                World.treasureDescs[0] = World.treasureDesc;
+                World.treasureDescs[1] = World.treasureDesc2;
+                World.treasureDescs[2] = World.treasureDesc3;
             }
             World.inputFile.Close();
-            return showAgain;
+
         }
     }
 }

@@ -9,9 +9,9 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
 {
     public static class Rooms
     {
-        public static bool DisplayRooms()
+        public static void DisplayRooms()
         {
-            bool showAgain = false;
+            
 
             World.inputFile = File.OpenText("Rooms.txt");
             while (!World.inputFile.EndOfStream)
@@ -76,72 +76,39 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
                 World.room15 = World.inputFile.ReadLine();
                 World.roomDesc15 = World.inputFile.ReadLine();
 
-                Console.WriteLine(World.roomID);
-                Console.WriteLine(World.room1);
-                Console.WriteLine(World.roomDesc);
+                World.rooms[0] = World.room1;
+                World.rooms[1] = World.room2;
+                World.rooms[2] = World.room3;
+                World.rooms[3] = World.room4;
+                World.rooms[4] = World.room5;
+                World.rooms[5] = World.room6;
+                World.rooms[6] = World.room7;
+                World.rooms[7] = World.room8;
+                World.rooms[8] = World.room9;
+                World.rooms[9] = World.room10;
+                World.rooms[10] = World.room11;
+                World.rooms[11] = World.room12;
+                World.rooms[12] = World.room13;
+                World.rooms[13] = World.room14;
+                World.rooms[14] = World.room15;
 
-                Console.WriteLine(World.roomID2);
-                Console.WriteLine(World.room2);
-                Console.WriteLine(World.roomDesc2);
-
-                Console.WriteLine(World.roomID3);
-                Console.WriteLine(World.room3);
-                Console.WriteLine(World.roomDesc3);
-
-                Console.WriteLine(World.roomID4);
-                Console.WriteLine(World.room4);
-                Console.WriteLine(World.roomDesc4);
-
-                Console.WriteLine(World.roomID5);
-                Console.WriteLine(World.room5);
-                Console.WriteLine(World.roomDesc5);
-
-                Console.WriteLine(World.roomID6);
-                Console.WriteLine(World.room6);
-                Console.WriteLine(World.roomDesc6);
-
-                Console.WriteLine(World.roomID7);
-                Console.WriteLine(World.room7);
-                Console.WriteLine(World.roomDesc7);
-
-                Console.WriteLine(World.roomID8);
-                Console.WriteLine(World.room8);
-                Console.WriteLine(World.roomDesc8);
-
-                Console.WriteLine(World.roomID9);
-                Console.WriteLine(World.room9);
-                Console.WriteLine(World.roomDesc9);
-
-                Console.WriteLine(World.roomID10);
-                Console.WriteLine(World.room10);
-                Console.WriteLine(World.roomDesc10);
-
-                Console.WriteLine(World.roomID11);
-                Console.WriteLine(World.room11);
-                Console.WriteLine(World.roomDesc11);
-
-                Console.WriteLine(World.roomID12);
-                Console.WriteLine(World.room12);
-                Console.WriteLine(World.roomDesc12);
-
-                Console.WriteLine(World.roomID13);
-                Console.WriteLine(World.room13);
-                Console.WriteLine(World.roomDesc13);
-
-                Console.WriteLine(World.roomID14);
-                Console.WriteLine(World.room14);
-                Console.WriteLine(World.roomDesc14);
-
-                Console.WriteLine(World.roomID15);
-                Console.WriteLine(World.room15);
-                Console.WriteLine(World.roomDesc15);
-
-
-
-                showAgain = true;
+                World.roomDescs[0] = World.roomDesc;
+                World.roomDescs[1] = World.roomDesc2;
+                World.roomDescs[2] = World.roomDesc3;
+                World.roomDescs[3] = World.roomDesc4;
+                World.roomDescs[4] = World.roomDesc5;
+                World.roomDescs[5] = World.roomDesc6;
+                World.roomDescs[6] = World.roomDesc7;
+                World.roomDescs[7] = World.roomDesc8;
+                World.roomDescs[8] = World.roomDesc9;
+                World.roomDescs[9] = World.roomDesc10;
+                World.roomDescs[10] = World.roomDesc11;
+                World.roomDescs[11] = World.roomDesc12;
+                World.roomDescs[12] = World.roomDesc13;
+                World.roomDescs[13] = World.roomDesc14;
+                World.roomDescs[14] = World.roomDesc15;
             }
             World.inputFile.Close();
-            return showAgain;
         }
     }
 }

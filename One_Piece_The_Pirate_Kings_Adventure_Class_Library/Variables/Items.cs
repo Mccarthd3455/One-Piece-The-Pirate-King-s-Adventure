@@ -35,30 +35,17 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
                 World.item5 = World.inputFile.ReadLine();
                 World.itemDesc5 = World.inputFile.ReadLine();
 
-                Console.WriteLine(World.itemID);
-                Console.WriteLine(World.item1);
-                Console.WriteLine(World.itemDesc);
+                World.items.Add(World.item1);
+                World.items.Add(World.item2);
+                World.items.Add(World.item3);
+                World.items.Add(World.item4);
+                World.items.Add(World.item5);
 
-                Console.WriteLine(World.itemID2);
-                Console.WriteLine(World.item2);
-                Console.WriteLine(World.itemDesc2);
-
-                Console.WriteLine(World.itemID3);
-                Console.WriteLine(World.item3);
-                Console.WriteLine(World.itemDesc3);
-                
-                Console.WriteLine(World.itemID3);
-                Console.WriteLine(World.item3);
-                Console.WriteLine(World.itemDesc3);
-
-                Console.WriteLine(World.itemID4);
-                Console.WriteLine(World.item4);
-                Console.WriteLine(World.itemDesc4);
-
-                Console.WriteLine(World.itemID5);
-                Console.WriteLine(World.item5);
-                Console.WriteLine(World.itemDesc5);
-                Console.ReadLine();
+                World.itemDescs.Add(World.itemDesc);
+                World.itemDescs.Add(World.itemDesc2);
+                World.itemDescs.Add(World.itemDesc3);
+                World.itemDescs.Add(World.itemDesc4);
+                World.itemDescs.Add(World.itemDesc5);
             }
             World.inputFile.Close();
             return showAgain;

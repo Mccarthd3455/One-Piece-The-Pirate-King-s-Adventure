@@ -41,21 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Command\HelpCommand.cs" />
+    <Compile Include="One_Piece_The_Pirate_Kings_Adventure_Class.cs" />
     <Compile Include="Combat\CombatSystem.cs" />
     <Compile Include="Combat\DiceRoll.cs" />
-    <Compile Include="Menu\CompleteGameMenu.cs" />
-    <Compile Include="Menu\InitalMenu.cs" />
-    <Compile Include="Menu\Items.cs" />
-    <Compile Include="Menu\MenuChoices.cs" />
-    <Compile Include="Menu\MenuIfStatements.cs" />
-    <Compile Include="Menu\MenuItems.cs" />
-    <Compile Include="Menu\Mobs.cs" />
-    <Compile Include="Menu\Potions.cs" />
-    <Compile Include="Menu\Treasure.cs" />
+    <Compile Include="Command\DisplayCommands.cs" />
+    <Compile Include="Command\InitalUserInput.cs" />
+    <Compile Include="Command\Movement.cs" />
+    <Compile Include="Variables\Items.cs" />
+    <Compile Include="Variables\Mobs.cs" />
+    <Compile Include="Variables\Potions.cs" />
+    <Compile Include="Variables\Treasure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Menu\Rooms.cs" />
-    <Compile Include="Menu\Weapons.cs" />
+    <Compile Include="Variables\Rooms.cs" />
+    <Compile Include="Variables\Weapons.cs" />
     <Compile Include="World.cs" />
     <Compile Include="WorldLoad.cs" />
   </ItemGroup>

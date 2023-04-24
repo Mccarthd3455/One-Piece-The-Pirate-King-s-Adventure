@@ -13,11 +13,13 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library
         {
             CreateRooms();
             CreateWeapons();
+            CreateMobs();
             CreatePotions();
             CreateTreasures();
             CreateItems();
+            ReadFiles();
         }
-        
+
         public static void CreateItems()
         {
             World.outputFile = File.CreateText("Items.txt");
@@ -138,6 +140,41 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library
             World.outputFile.WriteLine("Loot: Rare");
             World.outputFile.Close();
         }
+        public static void CreateMobs()
+        {
+            World.outputFile = File.CreateText("Mobs.txt");
+            World.outputFile.WriteLine("Mob001");
+            World.outputFile.WriteLine("Petty Theif");
+            World.outputFile.WriteLine("A very weak theif (75 health and 20 bludgeoning damage)");
+            World.outputFile.WriteLine("Mob002");
+            World.outputFile.WriteLine("Sea King");
+            World.outputFile.WriteLine("A Very Strong and Large Sea King (1000 health and 400 piercing  damage)");
+            World.outputFile.WriteLine("Mob003");
+            World.outputFile.WriteLine("Small Vemonous Snake");
+            World.outputFile.WriteLine("A baby snake (25 health 5 poison damage)");
+            World.outputFile.WriteLine("Mob004");
+            World.outputFile.WriteLine("Salmon");
+            World.outputFile.WriteLine("A salmon is a good source of free food(20 health deals no damage");
+            World.outputFile.WriteLine("Mob005");
+            World.outputFile.WriteLine("Dog");
+            World.outputFile.WriteLine("A very good companion (50 health and 10 piercing damage)");
+            World.outputFile.WriteLine("Mob006");
+            World.outputFile.WriteLine("Buff Bandit");
+            World.outputFile.WriteLine("A very strong bandit (150 health and 40 piercing damage)");
+            World.outputFile.WriteLine("Mob007");
+            World.outputFile.WriteLine("Small Training Dummy");
+            World.outputFile.WriteLine("Very useful for training. Has a small chance to hit back (100 health and 10 bludgeoning damage)");
+            World.outputFile.WriteLine("Mob008");
+            World.outputFile.WriteLine("Medium Training Dummy");
+            World.outputFile.WriteLine("Very useful for training. Has a small chance to hit back (120 health and 15 bludgeoning damage)");
+            World.outputFile.WriteLine("Mob009");
+            World.outputFile.WriteLine("Large Training Dummy");
+            World.outputFile.WriteLine("Very useful for training. Has a small chance to hit back (150 health and 20 bludgeoning damage)");
+            World.outputFile.WriteLine("Mob010");
+            World.outputFile.WriteLine("Boss Training Dummy");
+            World.outputFile.WriteLine("Very useful for training. Legend has it this training dummy has a spirit of a warrior. It will hit back. (200 health and 30 bludgeoning damage)");
+            World.outputFile.Close();
+        }
         public static void CreatePotions()
         {
             World.outputFile = File.CreateText("Potions.txt");
@@ -148,6 +185,15 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library
             World.outputFile.WriteLine("Large Health Potion");
             World.outputFile.WriteLine("A large health potion heals 100 hp (+100 hp)");
             World.outputFile.Close();
+        }
+        public static void ReadFiles()
+        {
+           Menu.Rooms.DisplayRooms();
+           Menu.Weapons.DisplayWeapons();
+           Menu.Mobs.DisplayMobs();
+           Menu.Potions.DisplayPotions();
+           Menu.Treasure.DisplayTreasure();
+           Menu.Items.DisplayItems();
         }
     }
 }

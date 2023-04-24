@@ -9,9 +9,8 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
 {
     public static class Weapons
     {
-        public static bool DisplayWeapons()
+        public static void DisplayWeapons()
         {
-            bool showAgain = false;
             World.inputFile = File.OpenText("Weapons.txt");
             while (!World.inputFile.EndOfStream)
             {
@@ -55,50 +54,29 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
                 World.weapon10 = World.inputFile.ReadLine();
                 World.weaponDesc10 = World.inputFile.ReadLine();
 
-                Console.WriteLine(World.weaponID);
-                Console.WriteLine(World.weapon1);
-                Console.WriteLine(World.weaponDesc);
+                World.weapons[0] = World.weapon1;
+                World.weapons[1] = World.weapon2;
+                World.weapons[2] = World.weapon3;
+                World.weapons[3] = World.weapon4;
+                World.weapons[4] = World.weapon5;
+                World.weapons[5] = World.weapon6;
+                World.weapons[6] = World.weapon7;
+                World.weapons[7] = World.weapon8;
+                World.weapons[8] = World.weapon9;
+                World.weapons[9] = World.weapon10;
 
-                Console.WriteLine(World.weaponID2);
-                Console.WriteLine(World.weapon2);
-                Console.WriteLine(World.weaponDesc2);
-
-                Console.WriteLine(World.weaponID3);
-                Console.WriteLine(World.weapon3);
-                Console.WriteLine(World.weaponDesc3);
-
-                Console.WriteLine(World.weaponID4);
-                Console.WriteLine(World.weapon4);
-                Console.WriteLine(World.weaponDesc4);
-
-                Console.WriteLine(World.weaponID5);
-                Console.WriteLine(World.weapon5);
-                Console.WriteLine(World.weaponDesc5);
-
-                Console.WriteLine(World.weaponID6);
-                Console.WriteLine(World.weapon6);
-                Console.WriteLine(World.weaponDesc6);
-
-                Console.WriteLine(World.weaponID7);
-                Console.WriteLine(World.weapon7);
-                Console.WriteLine(World.weaponDesc7);
-
-                Console.WriteLine(World.weaponID8);
-                Console.WriteLine(World.weapon8);
-                Console.WriteLine(World.weaponDesc8);
-
-                Console.WriteLine(World.weaponID9);
-                Console.WriteLine(World.weapon9);
-                Console.WriteLine(World.weaponDesc9);
-
-                Console.WriteLine(World.weaponID10);
-                Console.WriteLine(World.weapon10);
-                Console.WriteLine(World.weaponDesc10);
-
-                showAgain = true;
+                World.weaponDescs[0] = World.weaponDesc;
+                World.weaponDescs[1] = World.weaponDesc2;
+                World.weaponDescs[2] = World.weaponDesc3;
+                World.weaponDescs[3] = World.weaponDesc4;
+                World.weaponDescs[4] = World.weaponDesc5;
+                World.weaponDescs[5] = World.weaponDesc6;
+                World.weaponDescs[6] = World.weaponDesc7;
+                World.weaponDescs[7] = World.weaponDesc8;
+                World.weaponDescs[8] = World.weaponDesc9;
+                World.weaponDescs[9] = World.weaponDesc10;
             }
             World.inputFile.Close();
-            return showAgain;
         }
     }
 }
