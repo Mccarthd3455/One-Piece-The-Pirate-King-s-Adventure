@@ -65,16 +65,16 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
                 World.weapons[8] = World.weapon9;
                 World.weapons[9] = World.weapon10;
 
-                World.weaponDescs[0] = World.weaponDesc;
-                World.weaponDescs[1] = World.weaponDesc2;
-                World.weaponDescs[2] = World.weaponDesc3;
-                World.weaponDescs[3] = World.weaponDesc4;
-                World.weaponDescs[4] = World.weaponDesc5;
-                World.weaponDescs[5] = World.weaponDesc6;
-                World.weaponDescs[6] = World.weaponDesc7;
-                World.weaponDescs[7] = World.weaponDesc8;
-                World.weaponDescs[8] = World.weaponDesc9;
-                World.weaponDescs[9] = World.weaponDesc10;
+                //World.weaponDescs[0] = World.weaponDesc;
+                //World.weaponDescs[1] = World.weaponDesc2;
+                //World.weaponDescs[2] = World.weaponDesc3;
+                //World.weaponDescs[3] = World.weaponDesc4;
+                //World.weaponDescs[4] = World.weaponDesc5;
+                //World.weaponDescs[5] = World.weaponDesc6;
+                //World.weaponDescs[6] = World.weaponDesc7;
+                //World.weaponDescs[7] = World.weaponDesc8;
+                //World.weaponDescs[8] = World.weaponDesc9;
+                //World.weaponDescs[9] = World.weaponDesc10;
             }
             World.inputFile.Close();
         }

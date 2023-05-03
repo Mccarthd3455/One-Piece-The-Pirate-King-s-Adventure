@@ -36,18 +36,12 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library
         public static string itemID, itemID2, itemID3, itemID4, itemID5;
         public static string item1, item2, item3, item4, item5;
         public static string itemDesc, itemDesc2, itemDesc3, itemDesc4, itemDesc5;
-        public static string[] rooms = new string[15];
-        public static string[] roomDescs = new string[15];
-        public static string[] weapons = new string[10];
-        public static string[] weaponDescs = new string[10];
-        public static string[] potions = new string[2];
-        public static string[] potionDescs = new string[2];
-        public static string[] treasures = new string[3];
-        public static string[] treasureDescs = new string[3];
+        public static List<CreateRooms.Room> rooms = new List<CreateRooms.Room>();
+        public static List<string> weapons = new List<string>();
+        public static List<string> potions = new List<string>();
+        public static List<string> treasures = new List<string>();
         public static List<string> items = new List<string>();
-        public static List<string> itemDescs = new List<string>();
         public static List<string> mobs = new List<string>();
-        public static List<string> mobDescs = new List<string>();
 
         public static bool showAgain = false;
     }

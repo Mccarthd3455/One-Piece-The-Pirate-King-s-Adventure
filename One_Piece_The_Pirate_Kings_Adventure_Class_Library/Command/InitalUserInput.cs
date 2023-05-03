@@ -26,28 +26,28 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Command
                 }
                 else if (World.userInput.ToLower() == "weapons" || World.userInput == "Weapons")
                 {
-                    DisplayCommands.WeaponsCommand();
-                    World.showAgain = true;
+                    //DisplayCommands.WeaponsCommand();
+                    //World.showAgain = true;
                 }
                 else if (World.userInput.ToLower() == "potions" || World.userInput == "Potions")
                 {
-                    DisplayCommands.PotionsCommand();
-                    World.showAgain = true;
+                    //DisplayCommands.PotionsCommand();
+                    //World.showAgain = true;
                 }
                 else if (World.userInput.ToLower() == "treasures" || World.userInput == "Treasures")
                 {
-                    DisplayCommands.TreasureCommand();
-                    World.showAgain = true;
+                    //DisplayCommands.TreasureCommand();
+                    //World.showAgain = true;
                 }
                 else if (World.userInput.ToLower() == "items" || World.userInput == "Items")
                 {
-                    DisplayCommands.ItemCommand();
-                    World.showAgain = true;
+                    //DisplayCommands.ItemCommand();
+                    //World.showAgain = true;
                 }
                 else if (World.userInput.ToLower() == "mobs" || World.userInput == "Mobs")
                 {
-                    DisplayCommands.MobsCommand();
-                    World.showAgain = true;
+                    //DisplayCommands.MobsCommand();
+                    //World.showAgain = true;
                 }
                 else if (World.userInput.ToLower() == "combat" || World.userInput == "Combat")
                 {

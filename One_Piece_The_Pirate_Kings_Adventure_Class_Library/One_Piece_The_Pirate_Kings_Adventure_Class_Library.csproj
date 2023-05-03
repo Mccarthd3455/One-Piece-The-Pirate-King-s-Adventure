@@ -42,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Command\HelpCommand.cs" />
+    <Compile Include="Models\CreateMob.cs" />
+    <Compile Include="Models\CreatePlayer.cs" />
+    <Compile Include="Models\CreatePotion.cs" />
+    <Compile Include="Models\CreateRooms.cs" />
+    <Compile Include="Models\CreateTreasure.cs" />
     <Compile Include="One_Piece_The_Pirate_Kings_Adventure_Class.cs" />
     <Compile Include="Combat\CombatSystem.cs" />
     <Compile Include="Combat\DiceRoll.cs" />

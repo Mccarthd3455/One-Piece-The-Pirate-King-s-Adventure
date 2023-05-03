@@ -188,12 +188,12 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library
         }
         public static void ReadFiles()
         {
-           Menu.Rooms.DisplayRooms();
-           Menu.Weapons.DisplayWeapons();
-           Menu.Mobs.DisplayMobs();
-           Menu.Potions.DisplayPotions();
-           Menu.Treasure.DisplayTreasure();
-           Menu.Items.DisplayItems();
+           Rooms.DisplayRooms();
+            Menu.Weapons.DisplayWeapons();
+            Menu.Mobs.DisplayMobs();
+            Menu.Potions.DisplayPotions();
+            Menu.Treasure.DisplayTreasure();
+            Menu.Items.DisplayItems();
         }
     }
 }

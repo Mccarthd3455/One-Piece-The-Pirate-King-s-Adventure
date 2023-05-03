@@ -41,11 +41,11 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
                 World.items.Add(World.item4);
                 World.items.Add(World.item5);
 
-                World.itemDescs.Add(World.itemDesc);
-                World.itemDescs.Add(World.itemDesc2);
-                World.itemDescs.Add(World.itemDesc3);
-                World.itemDescs.Add(World.itemDesc4);
-                World.itemDescs.Add(World.itemDesc5);
+                //World.itemDescs.Add(World.itemDesc);
+                //World.itemDescs.Add(World.itemDesc2);
+                //World.itemDescs.Add(World.itemDesc3);
+                //World.itemDescs.Add(World.itemDesc4);
+                //World.itemDescs.Add(World.itemDesc5);
             }
             World.inputFile.Close();
             return showAgain;

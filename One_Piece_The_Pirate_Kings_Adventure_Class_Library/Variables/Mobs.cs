@@ -65,16 +65,16 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
                 World.mobs.Add(World.mob9);
                 World.mobs.Add(World.mob10);
                 
-                World.mobDescs.Add(World.mobDesc);
-                World.mobDescs.Add(World.mobDesc2);
-                World.mobDescs.Add(World.mobDesc3);
-                World.mobDescs.Add(World.mobDesc4);
-                World.mobDescs.Add(World.mobDesc5);
-                World.mobDescs.Add(World.mobDesc6);
-                World.mobDescs.Add(World.mobDesc7);
-                World.mobDescs.Add(World.mobDesc8);
-                World.mobDescs.Add(World.mobDesc9);
-                World.mobDescs.Add(World.mobDesc10);
+                //World.mobDescs.Add(World.mobDesc);
+                //World.mobDescs.Add(World.mobDesc2);
+                //World.mobDescs.Add(World.mobDesc3);
+                //World.mobDescs.Add(World.mobDesc4);
+                //World.mobDescs.Add(World.mobDesc5);
+                //World.mobDescs.Add(World.mobDesc6);
+                //World.mobDescs.Add(World.mobDesc7);
+                //World.mobDescs.Add(World.mobDesc8);
+                //World.mobDescs.Add(World.mobDesc9);
+                //World.mobDescs.Add(World.mobDesc10);
             }
             World.inputFile.Close();
 

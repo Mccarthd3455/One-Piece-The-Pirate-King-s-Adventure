@@ -25,8 +25,8 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
                 World.potions[0] = World.potion1;
                 World.potions[1] = World.potion2;
 
-                World.potionDescs[0] = World.potionDesc;
-                World.potionDescs[1] = World.potionDesc2;
+                //World.potionDescs[0] = World.potionDesc;
+                //World.potionDescs[1] = World.potionDesc2;
             }
             World.inputFile.Close();
         }

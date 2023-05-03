@@ -10,16 +10,15 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library
     {
         public static void MovementCommands()
         {
-            Console.WriteLine(World.rooms[0]);
-            Console.WriteLine(World.roomDescs[0]);
+    
             do
             {
-                Menu.Rooms.DisplayRooms();
+                Rooms.DisplayRooms();
                 World.userInput = newInput();
                 if (World.userInput.ToLower() == "north" || World.userInput.ToLower() == "n")
                 {
                     World.northCounter = World.i++;
-                    if (World.i < World.rooms.Length)
+                    if (World.i < World.rooms.Count)
                     {
                         Movement.MoveNorth();
                         Command.InitalUserInput.userInputCommand();
@@ -44,18 +43,21 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library
                         Console.WriteLine("Invalid Input");
                     }
                 }
+                else
+                {
+                    Console.WriteLine("Invalid Input");
+                    World.showAgain = true;
+                }
             }
             while (World.showAgain == true);
         }
         public static void MoveNorth()
         {
             Console.WriteLine(World.rooms[World.i]);
-            Console.WriteLine(World.roomDescs[World.i]);
         }
         public static void MoveSouth()
         {
             Console.WriteLine(World.rooms[World.southCounter]);
-            Console.WriteLine(World.roomDescs[World.southCounter]);
         }
         public static string newInput()
         {

@@ -28,9 +28,9 @@ namespace One_Piece_The_Pirate_Kings_Adventure_Class_Library.Menu
                 World.treasures[1] = World.treasure2;
                 World.treasures[2] = World.treasure3;
 
-                World.treasureDescs[0] = World.treasureDesc;
-                World.treasureDescs[1] = World.treasureDesc2;
-                World.treasureDescs[2] = World.treasureDesc3;
+                //World.treasureDescs[0] = World.treasureDesc;
+                //World.treasureDescs[1] = World.treasureDesc2;
+                //World.treasureDescs[2] = World.treasureDesc3;
             }
             World.inputFile.Close();
 
